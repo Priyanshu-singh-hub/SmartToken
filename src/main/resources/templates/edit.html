@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Token</title>
+</head>
+<body>
+
+<h2>Edit Token</h2>
+
+<form th:action="@{/updateToken}" method="post">
+
+    <!-- VERY IMPORTANT -->
+    <input type="hidden" name="id" th:value="${token.id}">
+
+    Name:
+    <input type="text" name="name" th:value="${token.name}">
+    <br><br>
+
+    Mobile:
+    <input type="text" name="mobile" th:value="${token.mobile}">
+    <br><br>
+
+    Token Number:
+    <input type="number" name="tokenNumber" th:value="${token.tokenNumber}">
+    <br><br>
+
+    <button type="submit">Update</button>
+</form>
+
+</body>
+</html>

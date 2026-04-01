@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SmartToken</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        }
+
+        .container{
+            background:white;
+            padding:50px;
+            border-radius:20px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.15);
+            text-align:center;
+            width:450px;
+        }
+
+        h1{
+            font-size:48px;
+            color:#1e3a5f;
+            margin-bottom:15px;
+        }
+
+        p{
+            font-size:22px;
+            color:#555;
+            margin-bottom:35px;
+        }
+
+        .btn{
+            display:block;
+            width:100%;
+            padding:15px;
+            margin:15px 0;
+            background:#007bff;
+            color:white;
+            text-decoration:none;
+            font-size:22px;
+            font-weight:bold;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#0056b3;
+            transform:scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>SmartToken</h1>
+        <p>Online Token Booking System</p>
+
+        <a href="/book" class="btn">Book Token</a>
+        <a href="/login" class="btn">Admin Login</a>
+    </div>
+
+</body>
+</html>
